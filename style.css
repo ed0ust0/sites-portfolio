@@ -270,6 +270,22 @@ a {
     min-width: 0;
 }
 
+.project-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-link:hover .project-image,
+.project-link:focus-visible .project-image {
+    transform: translateY(-6px);
+}
+
+.project-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
 .project-image {
     aspect-ratio: 4 / 4.5;
     display: flex;
